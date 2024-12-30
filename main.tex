@@ -1,0 +1,131 @@
+\documentclass[titlepage,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+
+\usepackage{illcmolthesis}
+
+% put your own adjustments into headers.tex
+\input{headers}
+
+% Please do not actually use this for your thesis ;-)
+\usepackage{lipsum}
+
+\begin{document}
+
+\title{TITLE OF THE THESIS}
+\author{John~Q.~Public}
+% \birthdate{April 1st, 1980} % optional
+% \birthplace{Alice Springs, Australia} % optional
+\defensedate{August 28, 2005}
+\supervisor{Dr Jack Smith}
+\supervisor{Prof Dr Jane Williams}
+\committeemember{Dr Jack Smith}
+\committeemember{Prof Dr Jane Williams}
+\committeemember{Dr Jill Jones}
+\committeemember{Dr Albert Heijn}
+\maketitle
+
+\begin{abstract}
+  ABSTRACT OF THE THESIS
+
+  \lipsum[10-11]
+\end{abstract}
+
+% If you want to, add acknowledgements *after* your defense.
+% Do not add acknowledgements when you upload to DataNose.
+% \begin{acknowledgements}
+% \end{acknowledgements}
+
+\clearpage
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\lipsum[1]
+
+\section{Background}\label{sec:background}
+
+\lipsum[2]
+
+\section{Literature}
+
+We use standard results from~\cite{BRV2001:Modal}.
+Also relevant for our work is~\cite{BB1999:IPGames} where it was proven that Logic is great.
+
+\lipsum[3-10]
+
+\section{Criticism}
+
+\lipsum[11-12]
+
+\chapter{My Logic}
+
+\lipsum[15]
+
+\section{Syntax}
+
+\begin{definition}\label{def:lang}
+We defined the \emph{language} $\mathcal{L}$ as follows:
+  \[
+    \phi ::= \top \mid p \mid \phi \land \phi
+  \]
+\end{definition}
+
+\lipsum[21]
+
+\section{Semantics}
+
+\section{Axioms}
+
+\section{Soundness}
+
+\section{Completeness}
+
+\chapter{Examples}
+
+\section{Figures}
+
+We illustrate the protagonist of this thesis in \Cref{fig:drawing}.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw (0,0) circle (0.5);
+    \draw (0,-0.5) -- (0,-2);
+    \draw (-1,-1) -- (1,-1);
+    \draw (0,-2) -- (-0.5,-3.5);
+    \draw (0,-2) -- (0.5,-3.5);
+  \end{tikzpicture}
+  \caption{The protagonist.}\label{fig:drawing}
+\end{figure}
+
+\section{Tables}
+
+In \Cref{tab:cities} we compare some cities.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l|rr}
+    \toprule
+    City & Population & area (km$^2$) \\
+    \midrule
+    Amsterdam & 851573 & 219 \\
+    Groningen & 200952 & 83  \\
+    Utrecht   & 321989 & 100 \\
+    \bottomrule
+  \end{tabular}
+  \caption{An Overview of Cities}\label{tab:cities}.
+\end{table}
+
+\chapter{Conclusion}
+
+As we discussed in \Cref{sec:background}, Logic is great.
+
+\lipsum[40-42]
+
+\clearpage
+\printbibliography[heading=bibintoc,title=Bibliography]
+
+\end{document}
