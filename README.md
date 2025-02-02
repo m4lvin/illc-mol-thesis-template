@@ -8,7 +8,9 @@ The template can be used locally or on Overleaf.
 
 It is available on:
 
-- Overleaf: <https://www.overleaf.com/latex/templates> - direct link to be added
+- Overleaf: <https://www.overleaf.com/latex/templates/illc-mol-thesis-template/bdfcdcvcynzk>
+
+- UvA GitLab: <https://uva-hva.gitlab.host/illc/illc-mol-thesis-template>
 
 - GitHub: <https://github.com/m4lvin/illc-mol-thesis-template>
 
