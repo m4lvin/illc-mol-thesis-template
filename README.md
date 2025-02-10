@@ -14,6 +14,10 @@ It is available on:
 
 - Codeberg: <https://codeberg.org/m4lvin/illc-mol-thesis-template>
 
+A port of the template for Typst is available at:
+
+- <https://codeberg.org/foxy/illc-mol-thesis>.
+
 Please note:
 
 - In general, make sure that you have read
