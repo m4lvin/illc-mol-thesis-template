@@ -1,7 +1,7 @@
 %% This file may be freely used and distributed under the terms of
 %% the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{illcmolthesis}[2024/12/30
+\ProvidesPackage{illcmolthesis}[2025/02/10
 ILLC Master of Logic Thesis Style,
 M. Vervoort, B. Loewe, M. Gattinger]
 
@@ -103,6 +103,7 @@ M. Vervoort, B. Loewe, M. Gattinger]
 \newcommand{\@committeememberG}{}
 \newcommand{\@committeememberH}{}
 \renewcommand{\maketitle}{%
+  \pagenumbering{Alph}
   \begin{titlepage}%
     % Make sure title-page is centered even with option 'twopage'
     % Note: these lengths should auto-revert after the titlepage is complete
@@ -150,6 +151,7 @@ M. Vervoort, B. Loewe, M. Gattinger]
     \@thanks%
     \vfil\null%
   \end{titlepage}%
+  \pagenumbering{alph}
   \setcounter{footnote}{0}%
   \global\let\thanks\relax
   \global\let\title\relax
@@ -173,4 +175,9 @@ M. Vervoort, B. Loewe, M. Gattinger]
 % added to allow working with amsbook
 \renewcommand{\author}[1]{%
   \gdef\@author{#1}%
+}
+\let\oldtableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{
+  \pagenumbering{arabic}
+  \oldtableofcontents
 }
