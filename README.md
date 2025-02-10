@@ -2,8 +2,6 @@
 
 Thesis template for the MSc Logic at ILLC, Amsterdam.
 
-See also <https://msclogic.illc.uva.nl/current-students/graduation/step-by-step-guide/>
-
 The template can be used locally or on Overleaf.
 
 It is available on:
@@ -14,4 +12,21 @@ It is available on:
 
 - GitHub: <https://github.com/m4lvin/illc-mol-thesis-template>
 
-- CodeBerg: <https://codeberg.org/m4lvin/illc-mol-thesis-template>
+- Codeberg: <https://codeberg.org/m4lvin/illc-mol-thesis-template>
+
+Please note:
+
+- In general, make sure that you have read
+  <https://msclogic.illc.uva.nl/current-students/graduation/>.
+
+- Do not modify the layout and formatting of the *title page*.
+  It must adhere to the guidelines at
+  <https://msclogic.illc.uva.nl/current-students/graduation/titlepage/>.
+
+- You may adapt the rest of the template as you like, but we
+  suggest that you keep the font size and margins similar.
+  In case of doubt whether your thesis is within the page limit
+  the committee may ask for a version using the original template.
+
+The template may be freely used and distributed under the terms of
+the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
