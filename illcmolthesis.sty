@@ -177,7 +177,12 @@ M. Vervoort, B. Loewe, M. Gattinger]
   \gdef\@author{#1}%
 }
 \let\oldtableofcontents\tableofcontents
-\renewcommand{\tableofcontents}{
-  \pagenumbering{arabic}
-  \oldtableofcontents
+\renewcommand{\tableofcontents}{%
+  \pagenumbering{roman}%
+  \oldtableofcontents%
+  \clearpage%
+  % we only start counting pages after the ToC
+  \pagenumbering{arabic}%
 }
+%%% Acknowledgements
+\newenvironment{acknowledgements}{\renewcommand\abstractname{Acknowledgements}\begin{abstract}\setcounter{page}{2}}{\end{abstract}}
